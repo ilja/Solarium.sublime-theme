@@ -2,6 +2,7 @@
     {
         "class": "label_control",
         "color": [128, 128, 128]
+        //"color": [238, 232, 213, 255]
     },
     {
         "class": "button_control",
@@ -116,7 +117,7 @@
         "layer0.texture": "Solarized.sublime-theme/scrollbar_puck_w0_h10.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [0, 10],
-        "content_margin": [8, 12]
+        "content_margin": [4, 12]
     },
     {
         "class": "scroll_bar_control",
@@ -131,7 +132,7 @@
         "layer0.texture": "Solarized.sublime-theme/scrollbar_hpuck_w10_h0.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [10, 0],
-        "content_margin": [12, 8]
+        "content_margin": [12, 4]
     },
     {
         "class": "scroll_corner_control",
@@ -140,13 +141,16 @@
         "layer0.inner_margin": [1, 1]
     },
     {
+        // find and quick open
         "class": "panel_control",
-        "layer0.tint": [64, 64, 64, 255],
-        "layer0.opacity": 1.0
+        "layer0.tint": [238, 232, 213, 255],
+        "color": [64, 64, 64, 255],
+        "layer0.opacity": 1.0        
     },
     {
         "class": "popup_control",
-        "layer0.tint": [64, 64, 64, 255],
+        //"layer0.tint": [64, 64, 64, 255],
+        "layer0.tint": [238, 232, 213, 255],
         "layer0.opacity": 1.0,
         "content_margin": [2, 2]
     },
@@ -269,29 +273,38 @@
         "layer0.draw_center": true
     },
     {
+        // filename in quick panel
         "class": "quick_panel_label",
-        "fg": [184, 184, 184, 255],
-        "match_fg": [255, 255, 255, 255],
-        "bg": [39, 40, 34, 255],
-        "selected_fg": [192, 192, 192, 255],
-        "selected_match_fg": [255, 255, 255, 255],
-        "selected_bg": [59, 61, 52, 255]
+        "fg": [147, 161, 161, 255],
+        "match_fg": [181, 137, 0, 255],
+        "bg": [238, 232, 213, 255],
+        //"bg": [39, 40, 34, 255],
+        "selected_fg": [147, 161, 161, 255],
+        //"selected_fg": [192, 192, 192, 255],
+        //"selected_match_fg": [255, 255, 255, 255],
+        "selected_match_fg": [181, 137, 0, 255],
+        //"selected_bg": [59, 61, 52, 255]
+        "selected_bg": [253, 246, 227, 255]
     },
     {
+        // paths in quick panel
         "class": "quick_panel_path_label",
-        "fg": [134, 134, 134, 255],
-        "match_fg": [255, 255, 255, 255],
-        "bg": [39, 40, 34, 255],
-        "selected_fg": [142, 142, 142, 255],
-        "selected_match_fg": [255, 255, 255, 255],
-        "selected_bg": [59, 61, 52, 255]
+        "fg": [147, 161, 161, 255],
+        "match_fg": [181, 137, 0, 255],
+        "bg": [238, 232, 213, 255],
+        "selected_fg": [147, 161, 161, 255],        
+        "selected_match_fg": [181, 137, 0, 255],        
+        "selected_bg": [253, 246, 227, 255]
     },
     {
+        //score label in quick panel
         "class": "quick_panel_score_label",
-        "fg": [134, 134, 134, 255],
-        "bg": [39, 40, 34, 255],
-        "selected_fg": [142, 142, 142, 255],
-        "selected_bg": [59, 61, 52, 255]
+        "fg": [147, 161, 161, 255],
+        //"fg": [134, 134, 134, 255],
+        "bg": [238, 232, 213, 255],
+        //"bg": [39, 40, 34, 255],
+        "selected_fg": [147, 161, 161, 255],
+        "selected_bg": [253, 246, 227, 255]
     },
     {
         "class": "mini_quick_panel_row",
@@ -299,8 +312,8 @@
     },
     {
         "class": "mini_quick_panel_row",
-        "attributes": ["selected"],
-        "layer0.tint": [59, 61, 52, 255],
+        "attributes": ["selected"],        
+        "layer0.tint": [253, 246, 227, 255],
         "layer0.opacity": 1.0
     },
 
@@ -310,11 +323,11 @@
         "background_color": [255, 255, 255, 255]
     },
     {
-        "class": "auto_complete_label",
+        "class": "auto_complete_label",        
         "fg": [72, 72, 72, 255],
         "match_fg": [0, 0, 0, 255],
         "bg": [255, 255, 255, 255],
-        "selected_fg": [72, 72, 72, 255],
+        "selected_fg": [72, 72, 72, 255],        
         "selected_match_fg": [0, 0, 0, 255],
         "selected_bg": [156, 185, 223, 255]
     },
@@ -322,14 +335,15 @@
     {
         "class": "tabset_control",
         "layer0.texture": "Solarized.sublime-theme/tabset.png",
-        //"bg": [238, 232, 213, 255],
-        "layer0.inner_margin": [1, 2, 1, 0],
-        "layer0.opacity": 1.0,
+        "layer0.bg": [238, 232, 213, 255],        
+        "layer0.inner_margin": [1, 2, 1, 1],
+        "layer0.opacity": 1.0,        
         "content_margin": [0, 4, 3, 3],
         "tab_overlap": 8,
         "tab_width": 180,
         "tab_min_width": 40,
         "tab_height": 28
+        //todo: remove dark border
     },
     {
         "class": "tab_control",
@@ -349,8 +363,9 @@
     {
         "class": "tab_control",
         "attributes": ["selected"],
-        "layer1.opacity": 1.0,
-        "bg": [253, 246, 227, 255]
+        //"bg": [253, 246, 227, 255],
+        "layer1.opacity": 1.0
+        
     },
     /*
     {
@@ -370,6 +385,7 @@
         [
             { "class": "tab_control", "attributes": ["selected"] }
         ],
+        "fg": [181, 137, 0, 255],
         "bg": [253, 246, 227]
     },
     {
