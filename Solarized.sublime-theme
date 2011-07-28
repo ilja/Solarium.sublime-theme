@@ -336,19 +336,19 @@
         "class": "tabset_control",
         "layer0.texture": "Solarized.sublime-theme/tabset.png",
         "layer0.bg": [238, 232, 213, 255],        
+        //"content_heigt": 200,
         "layer0.inner_margin": [1, 2, 1, 1],
         "layer0.opacity": 1.0,        
         "content_margin": [0, 4, 3, 3],
         "tab_overlap": 8,
         "tab_width": 180,
         "tab_min_width": 40,
-        "tab_height": 28
-        //todo: remove dark border
+        "tab_height": 28       
     },
     {
         "class": "tab_control",
         "layer0.texture": "Solarized.sublime-theme/tab_normal.png",
-       // "bg": [238, 232, 213, 255],
+        "bg": [238, 232, 213, 255],
         "layer0.inner_margin": [18, 4],
         "layer0.opacity": 1.0,
         "layer1.texture": "Solarized.sublime-theme/tab_selected.png",
