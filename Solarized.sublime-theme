@@ -300,7 +300,7 @@
     {
         //left sidebar container
         "class": "sidebar_container",
-        "layer0.tint": [101, 123, 131, 100], //todo
+        "layer0.tint": [147, 161, 161, 255],
         "layer0.opacity": 1.0,
         "layer0.draw_center": false,
         "layer0.inner_margin": [0, 0, 1, 0], 
@@ -308,11 +308,11 @@
     },
     {
         "class": "sidebar_tree",
-        "row_padding": [8, 3],
+        "row_padding": [8, 5, 3, 5],
         "indent": 12,
         "indent_offset": 17,
         //"background_color": [238, 232, 213, 255],
-        "layer0.tint": [238, 232, 213],
+        "layer0.tint": [245, 245, 245],
         "layer0.opacity": 1.0,
         "dark_content": false //??
     },
@@ -329,7 +329,8 @@
         [
             { "class": "tree_row", "attributes": ["selected"] }
         ],
-        "shadow_color": [160, 174, 192]
+        //ii"shadow_color": [160, 174, 192]
+        "shadow_color": [255, 255, 255]
     },
     {
         "class": "sidebar_label",
@@ -483,6 +484,7 @@
         "class": "tab_control",
         "attributes": ["selected"],
         //"bg": [253, 246, 227, 255],
+        "layer0.opacity": 0.0,
         "layer1.opacity": 1.0
         
     },
@@ -496,7 +498,7 @@
     {
         "class": "tab_label",
         "fg": [88, 110, 117],
-        "bg": [238, 232, 213],
+        "bg": [209, 214, 214],
         "fase": true
     },
     {
@@ -506,7 +508,7 @@
             { "class": "tab_control", "attributes": ["selected"] }
         ],
         "fg": [181, 137, 0, 255],
-        "bg": [253, 246, 227]
+        "bg": [241, 239, 234]
     },
     {
         "class": "tab_close_button",
