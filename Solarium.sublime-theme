@@ -2,7 +2,6 @@
     {
         "class": "label_control",
         "color": [128, 128, 128]
-        //"color": [238, 232, 213, 255]
     },
     {
         "class": "button_control",
@@ -222,7 +221,6 @@
     },
     {
         "class": "popup_control",
-        //"layer0.tint": [64, 64, 64, 255],
         "layer0.tint": [238, 232, 213, 255],
         "layer0.opacity": 1.0,
         "content_margin": [2, 2]
@@ -250,7 +248,10 @@
     },
     {
         "class": "disclosure_button_control",
-        "attributes": ["hover"],
+        "parents":
+        [
+            { "class": "tree_row", "attributes": ["hover"] }
+        ],
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0
     },
@@ -263,7 +264,6 @@
     {
         "class": "table_row",
         "layer0.texture": "Solarium.sublime-theme/row_highlight_wide.png",
-        //"layer0.bg": [253, 246, 227, 225],
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [1, 1]
     },
@@ -311,7 +311,7 @@
         "row_padding": [8, 5, 3, 5],
         "indent": 12,
         "indent_offset": 17,
-        //"background_color": [238, 232, 213, 255],
+        "indent_top_level": false,
         "layer0.tint": [245, 245, 245],
         "layer0.opacity": 1.0,
         "dark_content": false //??
@@ -329,7 +329,6 @@
         [
             { "class": "tree_row", "attributes": ["selected"] }
         ],
-        //ii"shadow_color": [160, 174, 192]
         "shadow_color": [255, 255, 255]
     },
     {
@@ -354,6 +353,10 @@
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [2, 2],
         "content_margin": [4, 3, 4, 3]
+    },
+    {
+        "class": "status_button",
+        "min_size": [100, 0]
     },
     {
         "class": "quick_panel",
@@ -449,15 +452,14 @@
         "class": "tabset_control",
         "layer0.texture": "Solarium.sublime-theme/tabset.png",
         "layer0.bg": [238, 232, 213, 255],        
-        //"content_heigt": 200,
-        //????"layer0.inner_margin": [1, 2, 1, 1],
         "layer0.inner_margin": [1, 2],
         "layer0.opacity": 1.0,        
         "content_margin": [0, 4, 3, 3],
         "tab_overlap": 8,
         "tab_width": 180,
         "tab_min_width": 40,
-        "tab_height": 28       
+        "tab_height": 28,
+        "mouse_wheel_switch": false
     },
     {
         "class": "tabset_control",
@@ -473,7 +475,7 @@
         "layer1.texture": "Solarium.sublime-theme/tab_selected.png",
         "layer1.inner_margin": [18, 4],
         "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-        //"layer2.texture": "Solarium.sublime-theme/tab_glow.png",
+        //"layer2.texture": "Solarium.sublime-theme/tab_inner_glow.png",
         //"layer2.inner_margin": [18, 4],
         //"layer2.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
         "content_margin": [20, 4, 13, 4],
@@ -483,10 +485,8 @@
     {
         "class": "tab_control",
         "attributes": ["selected"],
-        //"bg": [253, 246, 227, 255],
         "layer0.opacity": 0.0,
         "layer1.opacity": 1.0
-        
     },
     /*
     {
@@ -531,6 +531,30 @@
         "attributes": ["hover"],
         "layer1.opacity": 1.0
     },
+    
+    {
+        "class": "fold_button_control",
+        "layer0.texture": "Solarium.sublime-theme/arrow_right.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 0,
+        "layer1.texture": "Solarium.sublime-theme/arrow_right_over.png",
+        "layer1.opacity": 0.0,
+        "layer1.inner_margin": 0,
+        "content_margin": [9, 7, 8, 6]
+    },
+    {
+        "class": "fold_button_control",
+        "attributes": ["hover"],
+        "layer0.opacity": 0.0,
+        "layer1.opacity": 1.0
+    },
+    {
+        "class": "fold_button_control",
+        "attributes": ["expanded"],
+        "layer0.texture": "Solarium.sublime-theme/arrow_down.png",
+        "layer1.texture": "Solarium.sublime-theme/arrow_down_over.png"
+    },
+    
     {
         "class": "icon_regex",
         "layer0.texture": "Solarium.sublime-theme/icons/find_regex.png",
